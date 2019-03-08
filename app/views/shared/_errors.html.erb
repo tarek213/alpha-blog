@@ -1,0 +1,12 @@
+<% if obj.errors.any? %>
+  <div class="alert alert-danger container" role="alert">
+    <h4 class="alert-heading">Error!</h4>
+    <p>The following errors prevented the article from getting created.</p>
+    <hr>
+    <% obj.errors.full_messages.each do |msg| %>
+
+    <p class="mb-0"><%= msg %></p>
+  <% end %>
+</div>
+
+<% end %>
