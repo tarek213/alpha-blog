@@ -11,8 +11,9 @@ def new
 end
 
 def create
-
+#debugger   --> to degbug  from this line then press n in comand line to goto next line
 @article = Article.new(article_params)
+@article.user = User.first
 #
 # @article.save
 #
